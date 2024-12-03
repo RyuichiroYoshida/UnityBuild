@@ -7,7 +7,7 @@ set UNITY_EDITOR_PATH=c:\Program Files\Unity\Hub\Editor\
 set PROJECT_PATH=c:\Users\vantan\Desktop\TeamE
 set EXPORT_PATH="G:\その他のパソコン\マイ コンピュータ\Artifacts\Team2024"
 set LOG_FILE="C:\Users\vantan\Desktop\GitHubActions\UnityBuildCommands\log\TeamE.log"
-set GAS_URI="https://script.google.com/macros/s/AKfycbwFE95eSPBTax07d3mrhXX1FKK8uWJnbdqLZM_8toC07dVhlV23yaAWeb8NCFeVa56Q/exec?folder=U2FsdGVkX18ZLxH8c+lDvgtWaKeBYB4Y/gYft7IOJcg1zDRQXqmq3/RHTSRQSqfRqQBZ2I52jfKeR9n1O1FxLg==&team=E"
+set GAS_URI="https://script.google.com/macros/s/AKfycbz8goqh4NBZpD6v-mp4WCSoEZlPHuhOC2Yz5gq884ykcD0eP7lfBhVapedfLMUhzzAqjw/exec?folder=U2FsdGVkX18ZLxH8c+lDvgtWaKeBYB4Y/gYft7IOJcg1zDRQXqmq3/RHTSRQSqfRqQBZ2I52jfKeR9n1O1FxLg==&team=E"
 
 @REM 出力フォルダを処理のたびに削除する
 if exist "%PROJECT_PATH%\Build" (
