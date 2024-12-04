@@ -5,7 +5,7 @@ chcp 65001 > nul
 set UNITY_VERSION=2022.3.48f1
 set UNITY_EDITOR_PATH=c:\Program Files\Unity\Hub\Editor\
 set PROJECT_PATH=c:\Users\vantan\Desktop\TeamB
-set EXPORT_PATH="G:\その他のパソコン\マイ コンピュータ\Artifacts\Team2024"
+set EXPORT_PATH="G:\その他のパソコン\マイ コンピュータ\Artifacts\Team2024\TeamB"
 set LOG_FILE="C:\Users\vantan\Desktop\GitHubActions\UnityBuildCommands\log\TeamB.log"
 set GAS_URI="https://script.google.com/macros/s/AKfycbz8goqh4NBZpD6v-mp4WCSoEZlPHuhOC2Yz5gq884ykcD0eP7lfBhVapedfLMUhzzAqjw/exec?folder=U2FsdGVkX1/ierC9UJRzXur8wFbb1HDCi8NrAerh06MO3ubM3FZ+HrmCKnuaCxui5VxGzucci/kr0FxqOdXzZQ==&team=B"
 
@@ -39,6 +39,9 @@ if not %errorlevel% == 0 (
 )
 
 move "%PROJECT_PATH%\TeamB.zip" "%EXPORT_PATH%"
+if not %errorlevel% == 0 (
+	exit /b 1
+)
 
 PowerShell -Command "Invoke-WebRequest -Method GET -Uri %GAS_URI%"
 

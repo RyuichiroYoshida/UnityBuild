@@ -5,7 +5,7 @@ chcp 65001 > nul
 set UNITY_VERSION=2022.3.48f1
 set UNITY_EDITOR_PATH=c:\Program Files\Unity\Hub\Editor\
 set PROJECT_PATH=c:\Users\vantan\Desktop\TeamC
-set EXPORT_PATH="G:\その他のパソコン\マイ コンピュータ\Artifacts\Team2024"
+set EXPORT_PATH="G:\その他のパソコン\マイ コンピュータ\Artifacts\Team2024\TeamC"
 set LOG_FILE="C:\Users\vantan\Desktop\GitHubActions\UnityBuildCommands\log\TeamC.log"
 set GAS_URI="https://script.google.com/macros/s/AKfycbz8goqh4NBZpD6v-mp4WCSoEZlPHuhOC2Yz5gq884ykcD0eP7lfBhVapedfLMUhzzAqjw/exec?folder=U2FsdGVkX18rbDp+5PIgDy4oMmlzxnhsBHGt728z2eEldc3qgCn4HtZxjLt6UcKzvEAqC2VDgK8QaSwK+NI2pQ==&team=C"
 @REM 出力フォルダを処理のたびに削除する
