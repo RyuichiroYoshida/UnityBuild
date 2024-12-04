@@ -8,7 +8,6 @@ set PROJECT_PATH=c:\Users\vantan\Desktop\TeamA
 set EXPORT_PATH="G:\その他のパソコン\マイ コンピュータ\Artifacts\Team2024\TeamA"
 set LOG_FILE="C:\Users\vantan\Desktop\GitHubActions\UnityBuildCommands\log\TeamA.log"
 set GAS_URI="https://script.google.com/macros/s/AKfycbz8goqh4NBZpD6v-mp4WCSoEZlPHuhOC2Yz5gq884ykcD0eP7lfBhVapedfLMUhzzAqjw/exec?folder=U2FsdGVkX1+KQa/6Ok6Ncn7IiRh8n3070sf4I/Y/D35d3Bv+3/xHbCHB23MXzuV8Dx+U+nV2LwcoW0CbBaH+xw==&team=A"
-
 @REM 出力フォルダを処理のたびに削除する
 if exist "%PROJECT_PATH%\Build" (
 	rmdir /s /q "%PROJECT_PATH%\Build"
@@ -38,11 +37,11 @@ if not %errorlevel% == 0 (
 	exit /b 1
 )
 
-move "%PROJECT_PATH%\TeamA.zip" "%EXPORT_PATH%"
+move /Y "%PROJECT_PATH%\TeamA.zip" %EXPORT_PATH%
 if not %errorlevel% == 0 (
 	exit /b 1
 )
 
-PowerShell -Command "Invoke-WebRequest -Method GET -Uri %GAS_URI%"
+curl %GAS_URI%
 
 pause

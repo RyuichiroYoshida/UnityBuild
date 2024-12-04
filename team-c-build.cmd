@@ -37,11 +37,11 @@ if not %errorlevel% == 0 (
 	exit /b 1
 )
 
-move "%PROJECT_PATH%\TeamC.zip" "%EXPORT_PATH%"
+move /Y "%PROJECT_PATH%\TeamC.zip" %EXPORT_PATH%
 if not %errorlevel% == 0 (
 	exit /b 1
 )
 
-PowerShell -Command "Invoke-WebRequest -Method GET -Uri %GAS_URI%"
+curl %GAS_URI%
 
 pause
